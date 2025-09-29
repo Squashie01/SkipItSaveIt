@@ -1,4 +1,4 @@
-package skipitsaveit.app;
+package com.skipitsaveit.app;
 
 import com.getcapacitor.BridgeActivity;
 

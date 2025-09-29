@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <resources>
-    <string name="app_name">Skip It Save It</string>
-    <string name="title_activity_main">Skip It Save It</string>
-    <string name="package_name">skipitsaveit.app</string>
-    <string name="custom_url_scheme">skipitsaveit.app</string>
+    <string name="app_name">Skip It Save It</string>
+    <string name="title_activity_main">Skip It Save It</string>
+    <string name="package_name">com.skipitsaveit.app</string>
+    <string name="custom_url_scheme">com.skipitsaveit.app</string>
 </resources>

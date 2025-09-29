@@ -58,69 +58,6 @@ const Tagline = styled.p`
   line-height: 1.4;
 `;
 
-const FloatingIcon = styled.span`
-  position: absolute;
-  opacity: 0.8;
-  z-index: 1;
-  animation: ${props => float(props.index)} ${props => 5 + Math.random() * 5}s ease-in-out infinite;
-  color: ${theme.colors.primary};
-  
-  /* Position icons with more spread */
-  &:nth-child(1) { /* Far Top Left */
-    top: -15px;
-    left: -10px;
-    font-size: 1.5rem;
-    ${media.md} {
-      top: -20px;
-      left: -15px;
-      font-size: 1.75rem;
-    }
-  }
-  
-  &:nth-child(2) { /* Top Right - Moved further right and down */
-    top: 10px;
-    right: -30px;
-    font-size: 1.5rem;
-    ${media.md} {
-      top: 15px;
-      right: -40px;
-      font-size: 1.75rem;
-    }
-  }
-  
-  &:nth-child(3) { /* Middle Left - Moved further left and up */
-    top: 40%;
-    left: -40px;
-    font-size: 1.75rem;
-    transform: translateY(-50%);
-    ${media.md} {
-      left: -50px;
-      font-size: 2rem;
-    }
-  }
-  
-  &:nth-child(4) { /* Middle Right - Moved further right and down */
-    top: 60%;
-    right: -40px;
-    font-size: 1.75rem;
-    transform: translateY(-50%);
-    ${media.md} {
-      right: -50px;
-      font-size: 2rem;
-    }
-  }
-  
-  &:nth-child(5) { /* Bottom Center - Further Down */
-    bottom: -25px;
-    left: 50%;
-    font-size: 1.75rem;
-    transform: translateX(-50%);
-    ${media.md} {
-      bottom: -30px;
-      font-size: 2rem;
-    }
-  }
-`;
 
 const SettingsButton = styled.button`
   position: absolute;
