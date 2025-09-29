@@ -1,5 +1,5 @@
 import React from 'react';
-import styled, { keyframes } from 'styled-components';
+import styled from 'styled-components';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { theme, media } from '../../theme';
 import { FiPlus } from 'react-icons/fi';
