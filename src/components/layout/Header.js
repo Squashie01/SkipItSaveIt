@@ -3,17 +3,6 @@ import styled, { keyframes } from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { theme, media, typography } from '../../theme';
 
-// Icons
-const icons = ['💰', '💸', '💳', '📊', '📉'];
-
-// Animation for floating icons
-const float = index => keyframes`
-  0% { transform: translate(0, 0) rotate(0deg); }
-  25% { transform: translate(${Math.random() * 20 - 10}px, ${Math.random() * 20 - 10}px) rotate(${Math.random() * 20 - 10}deg); }
-  50% { transform: translate(${Math.random() * 20 - 10}px, ${Math.random() * 30 - 15}px) rotate(${Math.random() * 30 - 15}deg); }
-  75% { transform: translate(${Math.random() * 20 - 10}px, ${Math.random() * 20 - 10}px) rotate(${Math.random() * 20 - 10}deg); }
-  100% { transform: translate(0, 0) rotate(0deg); }
-`;
 
 const HeaderContainer = styled.header`
   position: relative;
@@ -167,13 +156,6 @@ const Logo = () => (
   <LogoGroup>
     <AppName>Skip It Save It</AppName>
     <Tagline>Rethink the spend. Reclaim your future!</Tagline>
-    
-    {/* Keep only first two icons */}
-    {['💰', '💸'].map((icon, index) => (
-      <FloatingIcon key={index} index={index}>
-        {icon}
-      </FloatingIcon>
-    ))}
   </LogoGroup>
 );
 
