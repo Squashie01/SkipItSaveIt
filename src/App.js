@@ -9,7 +9,7 @@ import { SavingsGoal } from './components/savings/SavingsGoal';
 import { TransactionItem } from './components/transactions/TransactionItem';
 import Settings from './pages/Settings';
 import Calculator from './pages/Calculator';
-import { theme as defaultTheme, getTheme, THEMES, media } from './theme';
+import { theme as getTheme, media } from './theme';
 import { ThemeProvider as AppThemeProvider, useTheme } from './context/ThemeContext';
 
 const AppContainer = styled.div`
@@ -77,47 +77,6 @@ const SectionTitle = styled.h2`
   `}
 `;
 
-// Note: Removed the floating action button since we have it in the Navigation component
-
-// Sample data
-const sampleTransactions = [
-  { 
-    id: 1, 
-    title: 'Coffee', 
-    amount: 4.50, 
-    date: 'Today', 
-    type: 'expense', 
-    icon: '☕',
-    category: 'Food & Drinks'
-  },
-  { 
-    id: 2, 
-    title: 'Freelance Work', 
-    amount: 250, 
-    date: 'Yesterday', 
-    type: 'income', 
-    icon: '💼',
-    category: 'Income'
-  },
-  { 
-    id: 3, 
-    title: 'Grocery Shopping', 
-    amount: 78.32, 
-    date: 'Yesterday', 
-    type: 'expense', 
-    icon: '🛒',
-    category: 'Groceries'
-  },
-  { 
-    id: 4, 
-    title: 'Birthday Gift', 
-    amount: 45.00, 
-    date: '2 days ago', 
-    type: 'expense', 
-    icon: '🎁',
-    category: 'Gifts'
-  },
-];
 
 const formatDate = (dateString) => {
   // Create dates in local timezone

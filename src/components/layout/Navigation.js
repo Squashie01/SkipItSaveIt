@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { keyframes } from 'styled-components';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { theme, media, typography } from '../../theme';
+import { theme, media } from '../../theme';
 import { FiPlus } from 'react-icons/fi';
 
 // NavItem component
@@ -33,12 +33,6 @@ const FabButton = ({ onClick, children }) => (
   </AddButton>
 );
 
-// Animation for the FAB
-const pulse = keyframes`
-  0% { transform: scale(1); }
-  50% { transform: scale(1.05); }
-  100% { transform: scale(1); }
-`;
 
 const NavContainer = styled.nav`
   position: fixed;
@@ -95,12 +89,6 @@ const NavButton = styled.button`
   }
   
   
-`;
-
-const NavIcon = styled.span`
-  font-size: 20px;
-  margin-bottom: 2px;
-  transition: all 0.2s ease;
 `;
 
 const AddButton = styled.button`
@@ -162,15 +150,6 @@ const AddButton = styled.button`
   
   &:active {
     transform: translateX(-50%) scale(0.98);
-  }
-`;
-
-const PlusIcon = styled.span`
-  font-size: 24px;
-  color: ${({ theme }) => theme.colors.text};
-  font-weight: bold;
-  position: relative;
-  z-index: 1;
   }
 `;
 

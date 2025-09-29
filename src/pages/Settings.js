@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import { useNavigate } from 'react-router-dom';
 import { useTheme } from '../context/ThemeContext';
-import { theme as themeVars, typography } from '../theme';
 import { FiArrowLeft, FiSun, FiMoon, FiDollarSign, FiClock, FiInfo, FiBell, FiSave } from 'react-icons/fi';
 
 const SettingsContainer = styled.div`
